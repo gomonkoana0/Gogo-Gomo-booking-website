@@ -1,115 +1,34 @@
-/* GOOGLE FONT */
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Open+Sans:wght@400;600&display=swap");
-
-/* PAGE */
-body {
-  background-color: #111111;
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-
-  border: 12px solid;
-  border-image: repeating-linear-gradient(
-      45deg,
-      #8b0000 0 12px,
-      #ffffff 12px 24px,
-      #000000 24px 36px
-    )
-    12;
+nav {
+    background-color: #8B0000;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-/* STICKY NAVIGATION BAR */
-.topbar {
-  background-color: #000000;
-  border-bottom: 3px solid #d4af37;
-  color: white;
-  text-align: center;
-  padding: 20px;
-
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+nav h1 {
+    color: white;
+    margin: 0;
 }
 
-/* HEADINGS */
-h1,
-h2 {
-  font-family: "Cinzel", serif;
-  color: #d4af37;
-  text-align: center;
+nav ul {
+    list-style: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
-/* SECTIONS / CARDS */
-section {
-  background-color: #1c1c1c;
-  border: 2px solid #d4af37;
-  border-radius: 20px;
-
-  padding: 25px;
-  margin: 20px;
-
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+nav li {
+    display: inline;
 }
 
-/* PARAGRAPHS */
-p {
-  color: white;
-  font-size: 18px;
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* LINKS */
-a {
-  color: #d4af37;
-  text-decoration: none;
-}
-
-a:hover {
-  color: white;
-}
-
-/* BUTTONS */
-button {
-  background-color: #8b0000;
-  color: white;
-
-  border: none;
-  border-radius: 10px;
-
-  padding: 12px 25px;
-  font-size: 16px;
-
-  cursor: pointer;
-
-  transition: 0.3s;
-}
-
-button:hover {
-  transform: scale(1.05);
-}
-
-/* FORM INPUTS */
-input,
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-
-  border: 1px solid #d4af37;
-  border-radius: 10px;
-
-  background-color: #222222;
-  color: white;
-
-  margin-bottom: 15px;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #000000;
-  color: white;
-  border-top: 3px solid #d4af37;
+nav a:hover {
+    color: gold;
 }
