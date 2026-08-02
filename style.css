@@ -32,3 +32,28 @@ nav a {
 nav a:hover {
     color: gold;
 }
+.card {
+    background: white;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.button {
+    display: inline-block;
+    background: #8B0000;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #b30000;
+}
+
+body {
+    background-color: #f5f0e6;
+}
