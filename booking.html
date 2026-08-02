@@ -1,62 +1,88 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Book Appointment - Gogo Gomo</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gogo Gomo Traditional Healing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <body>
-    <div class="topbar">
-      <h2>Gogo Gomo Traditional Healing</h2>
-    </div>
+<header>
+    <h1>Gogo Gomo Traditional Healing</h1>
 
-    <header>
-      <h1>Book an Appointment</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="booking.html">Book Appointment</a></li>
+        </ul>
+    </nav>
+</header>
 
-      <h2>A R100 deposit is required to secure your booking.</h2 cft67>
-      <p>
-        Your information is confidential and only used for your booking
-        purposes.
-      </p>
-      <p>
-        After submitting your request,Gogo Gomo will contact you regarding
-        availability and deposit payment.
-      </p>
-    </header>
+<section id="home" class="card">
+    <h2>Welcome to Gogo Gomo Traditional Healing</h2>
 
-    <section>
-      <form action="https://formspree.io/f/mqerojpw" method="POST">
-        <label>Full Name</label><br />
-        <input type="text" name="full_name" required /><br /><br />
+    <p>
+        Thokoza. Gogo Gomo welcomes you for private and confidential
+        traditional healing consultations.
+    </p>
 
-        <label>WhatsApp Number</label><br />
-        <input type="tel" name="whatsapp_number" required /><br /><br />
+    <p>
+        Traditional consultations, ancestral guidance, cleansing rituals,
+        and spiritual support.
+    </p>
 
-        <label>Service Required</label><br />
-        <select name="service" required>
-          <option value="">Select a Service</option>
-          <option>Bone Consultation</option>
-          <option>River Cleansing</option>
-          <option>Spiritual Cleansing</option>
-          <option>Ancestral Guidance</option></select
-        ><br /><br />
+    <a href="booking.html" class="button">
+        Book Appointment
+    </a>
+</section>
 
-        <label>Preferred Date</label><br />
-        <input type="date" name="preferred_date" required /><br /><br />
+<section id="about" class="card">
+    <h2>About Gogo Gomo</h2>
 
-        <label>Additional Information</label><br />
-        <textarea name="message" rows="4"></textarea><br /><br />
-        <p>
-<strong>Important:</strong>
-A booking is not confirmed until the
-R100 deposit has been received.
-<input
-    type="hidden"
-    name="_redirect"
-    value="https://gomonkoana0.github.io/Gogo-Gomo-booking-website/thankyou.html">
-</p>  <button type="submit">Request Booking</button>
+    <p>
+        Gogo Gomo Traditional Healing provides spiritual guidance,
+        traditional consultations and cleansing services in a respectful,
+        confidential environment.
+    </p>
+</section>
 
-      </form>
-    </section>
-  </body>
+<section id="services" class="card">
+    <h2>Services</h2>
+
+    <ul>
+        <li>Bone Consultations</li>
+        <li>River Cleansing</li>
+        <li>Spiritual Cleansing</li>
+        <li>Ancestral Guidance</li>
+        <li>Protection Rituals</li>
+        <li>Dream Interpretation</li>
+    </ul>
+</section>
+
+<section class="card">
+    <h2>Consultation Fee</h2>
+
+    <p>
+        Booking Fee: <strong>R100</strong>
+    </p>
+
+    <p>
+        The booking fee is 50% of the consultation fee and secures your appointment.
+    </p>
+</section>
+
+<footer>
+    <p>
+        © 2026 Gogo Gomo Traditional Healing
+    </p>
+
+    <p>
+        WhatsApp: +27 61 454 0385
+    </p>
+</footer>
+
+</body>
 </html>
