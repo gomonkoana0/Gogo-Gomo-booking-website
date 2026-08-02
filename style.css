@@ -99,3 +99,73 @@ footer {
   text-align: center;
   padding: 15px;
 }
+/* Sticky Navigation */
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Watermark */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("logo.png.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 500px;
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Gallery */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 250px;
+  border-radius: 15px;
+}
+
+/* WhatsApp Button */
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  background: #25d366;
+  color: white;
+
+  text-decoration: none;
+  padding: 15px 20px;
+
+  border-radius: 50px;
+  font-weight: bold;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Styling */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}

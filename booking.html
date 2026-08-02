@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Appointment - Gogo Gomo Traditional Healing</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Appointment</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -12,13 +12,11 @@
 <header>
     <img src="logo.png.jpeg" alt="Gogo Gomo Logo" class="logo">
 
-    <h1>Gogo Gomo Traditional Healing</h1>
-    <p>Thokoza • Lesedi • Kganya</p>
+    <h1>Book Appointment</h1>
 
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="booking.html">Book Appointment</a></li>
         </ul>
     </nav>
 </header>
@@ -26,65 +24,55 @@
 <main>
 
 <section class="card">
-    <h2>Book Your Appointment</h2>
 
-    <p>
-        Consultation Fee: <strong>R200</strong>
-    </p>
+<h2>Appointment Request</h2>
 
-    <p>
-        Booking Deposit: <strong>R100</strong>
-    </p>
+<form action="https://formspree.io/f/mqerojpw" method="POST">
 
-    <p>
-        A booking is confirmed only after the deposit has been paid.
-    </p>
+<input type="hidden" name="_next" value="thankyou.html">
 
-    <form action="https://formspree.io/f/mqerojpw" method="POST">
+<label>Full Name</label>
+<input type="text" name="name" required>
 
-        <label>Full Name</label><br>
-        <input type="text" name="name" required><br><br>
+<label>Phone Number</label>
+<input type="tel" name="phone" required>
 
-        <label>Phone Number</label><br>
-        <input type="tel" name="phone" required><br><br>
+<label>Service Required</label>
+<input type="text" name="service" required>
 
-        <label>Service Required</label><br>
-        <input type="text" name="service" required><br><br>
+<label>Preferred Date</label>
+<input type="date" name="date" required>
 
-        <label>Preferred Date</label><br>
-        <input type="date" name="date" required><br><br>
+<label>Message</label>
+<textarea name="message"></textarea>
 
-        <label>Message</label><br>
-        <textarea name="message" rows="5"></textarea><br><br>
+<button type="submit" class="button">
+Submit Booking
+</button>
 
-        <button type="submit" class="button">
-            Submit Booking Request
-        </button>
+</form>
 
-    </form>
 </section>
 
 <section class="card">
-    <h2>Payment Information</h2>
 
-    <p>
-        Deposit Amount: <strong>R100</strong>
-    </p>
+<h2>Deposit Information</h2>
 
-    <p>
-        After submitting your booking request, send proof of payment via WhatsApp:
-    </p>
+<p>
+Booking Deposit: <strong>R100</strong>
+</p>
 
-    <p>
-        <strong>+27 61 454 0385</strong>
-    </p>
+<p>
+Send proof of payment via WhatsApp after booking.
+</p>
+
 </section>
 
 </main>
 
-<footer>
-    <p>© 2026 Gogo Gomo Traditional Healing</p>
-</footer>
+<a href="https://wa.me/27614540385" class="whatsapp-button">
+    WhatsApp
+</a>
 
 </body>
 </html>
