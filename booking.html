@@ -41,7 +41,15 @@
 <input type="text" name="service" required>
 
 <label>Preferred Date</label>
-<input type="date" name="date" required>
+<input type="date"id ="date" name="date" required>
+<label for="time">Preferred Time</label>
+<input
+    type="time"
+    id="time"
+    name="time"
+    min="08:00"
+    max="18:00"
+    required>
 
 <label>Message</label>
 <textarea name="message"></textarea>
@@ -73,6 +81,17 @@ Send proof of payment via WhatsApp after booking.
 <a href="https://wa.me/27614540385" class="whatsapp-button">
     WhatsApp
 </a>
+<script>
+const dateInput = document.getElementById("date");
 
+dateInput.addEventListener("input", function () {
+    const selectedDate = new Date(this.value);
+
+    if (selectedDate.getDay() === 1) {
+        alert("Bookings are not available on Mondays. Please choose another day.");
+        this.value = "";
+    }
+});
+</script>
 </body>
 </html>
